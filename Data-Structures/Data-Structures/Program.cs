@@ -6,6 +6,8 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("---------** Linked List Implementation **---------\n");
+
             LinkedListClass list = new LinkedListClass();
 
             // Adding nodes to the list
@@ -27,7 +29,25 @@ namespace LinkedList
             bool contains20 = list.Includes(20);
             bool contains10 = list.Includes(10);
             Console.WriteLine($"\nList contains 20: {contains20}");
-            Console.WriteLine($"List contains 10: {contains10}"); 
+            Console.WriteLine($"List contains 10: {contains10}");
+
+
+            Console.WriteLine("\n---------** Linked List Remove Duplicates **---------\n");
+            LinkedListClass removelist = new LinkedListClass();
+            list.Add(5);
+            list.Add(20);
+            list.Add(20);
+            list.Add(10);
+            list.Add(5);
+            list.Add(10);
+
+            Console.WriteLine("Initial list with duplicates:");
+            list.PrintList(); // Output: Head -> 5 -> 20 -> 20 -> 10 -> 5 -> 10 -> Null
+
+            list.RemoveDuplicate();
+
+            Console.WriteLine("\nAfter removing duplicates:");
+            list.PrintList(); // Output: Head -> 5 -> 20 -> 10 -> Null
 
         }
     }

@@ -83,5 +83,26 @@ namespace Data_Structures
             }
             Console.WriteLine("Null");
         }
+        public void RemoveDuplicate()
+        {
+            Node current = Head;
+
+            while (current != null)
+            {
+                Node duplicates = current;
+                while (duplicates.Next != null)
+                {
+                    if (duplicates.Next.Data == current.Data)
+                    {
+                        duplicates.Next = duplicates.Next.Next;
+                    }
+                    else
+                    {
+                        duplicates = duplicates.Next;
+                    }
+                }
+                current = current.Next;
+            }
+        }
     }
 }
