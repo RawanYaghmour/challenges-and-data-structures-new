@@ -10,14 +10,14 @@ Link for console output:
  
 ## Linked-List-Implementation 
 Link for whiteboard:
-[Link](./Data-Structures/Data-Structures/Assets/linked-list.jpg)
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/linked-list.jpg)
 
 Link for console output:
-[Link](./Data-Structures/Data-Structures/Assets/consol-linkedlist.PNG)
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/consol-linkedlist.PNG)
 
 ## Linked-List-Remove-Duplicates
 Link for whiteboard:
-[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/Linked-List-Remove-Duplicates.jpg)
+[Link](./Data-Structures/Data-Structures/RemoveDuplicate/Assets/Linked-List-Remove-Duplicates.jpg)
 
 Link for console output:
-[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/console.PNG)
+[Link](./Data-Structures/Data-Structures/RemoveDuplicate/Assets/console.PNG)
