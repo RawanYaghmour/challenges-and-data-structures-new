@@ -17,7 +17,7 @@ Link for console output:
 
 ## Linked-List-Remove-Duplicates
 Link for whiteboard:
-[Link](./Data-Structures/Data-Structures/Assets/Linked-List-Remove-Duplicates.jpg)
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/Linked-List-Remove-Duplicates.jpg)
 
 Link for console output:
-[Link](./Data-Structures/Data-Structures/Assets/console.PNG)
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/console.PNG)
