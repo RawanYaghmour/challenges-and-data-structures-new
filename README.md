@@ -29,7 +29,6 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Data-Structures/Assets/consol-linkedlist.PNG)
- master
 
 ## Linked List Merge Sorted Lists
 Link for whiteboard:
