@@ -49,6 +49,61 @@ namespace LinkedList
             Console.WriteLine("\nAfter removing duplicates:");
             list.PrintList(); // Output: Head -> 5 -> 20 -> 10 -> Null
 
+
+
+
+
+
+            Console.WriteLine("\n---------** Linked List Merge Sorted Lists **---------\n");
+
+            // Test Case 1: Both lists are empty
+            LinkedListClass list1 = new LinkedListClass();
+            LinkedListClass list2 = new LinkedListClass();
+            Console.WriteLine("Test Case 1: Both lists are empty");
+            PrintMergedList(list1, list2); // Expected Output: Head -> Null
+
+            // Test Case 2: One list is empty
+            list1 = new LinkedListClass();
+            list2 = new LinkedListClass();
+            list2.Add(1);
+            list2.Add(3);
+            list2.Add(5);
+            Console.WriteLine("Test Case 2: One list is empty");
+            PrintMergedList(list1, list2); // Expected Output: Head -> 1 -> 3 -> 5 -> Null
+
+            // Test Case 3: Both lists have elements
+            list1 = new LinkedListClass();
+            list1.Add(5);
+            list1.Add(10);
+            list1.Add(15);
+
+            list2 = new LinkedListClass();
+            list2.Add(2);
+            list2.Add(3);
+            list2.Add(20);
+            Console.WriteLine("Test Case 3: Both lists have elements");
+            PrintMergedList(list1, list2); // Expected Output: Head -> 2 -> 3 -> 5 -> 10 -> 15 -> 20 -> Null
+
+            // Test Case 4: Both lists have overlapping elements
+            list1 = new LinkedListClass();
+            list1.Add(10);
+            list1.Add(20);
+            list1.Add(30);
+
+            list2 = new LinkedListClass();
+            list2.Add(5);
+            list2.Add(15);
+            list2.Add(25);
+            list2.Add(35);
+            Console.WriteLine("Test Case 4: Both lists have overlapping elements");
+            PrintMergedList(list1, list2); // Expected Output: Head -> 5 -> 10 -> 15 -> 20 -> 25 -> 30 -> 35 -> Null
+        }
+
+        private static void PrintMergedList(LinkedListClass list1, LinkedListClass list2)
+        {
+            LinkedListClass mergedList = LinkedListClass.MergeSortedLists(list1, list2);
+            mergedList.PrintList();
         }
     }
-}
+    }
+

@@ -104,5 +104,41 @@ namespace Data_Structures
                 current = current.Next;
             }
         }
+
+        public static LinkedListClass MergeSortedLists(LinkedListClass list1, LinkedListClass list2)
+        {
+            LinkedListClass mergedList = new LinkedListClass();
+
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+
+            while (current1 != null && current2 != null)
+            {
+                if (current1.Data <= current2.Data)
+                {
+                    mergedList.Add(current1.Data);
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    mergedList.Add(current2.Data);
+                    current2 = current2.Next;
+                }
+            }
+
+            while (current1 != null)
+            {
+                mergedList.Add(current1.Data);
+                current1 = current1.Next;
+            }
+
+            while (current2 != null)
+            {
+                mergedList.Add(current2.Data);
+                current2 = current2.Next;
+            }
+
+            return mergedList;
+        }
     }
 }
