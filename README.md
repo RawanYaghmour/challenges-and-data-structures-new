@@ -5,4 +5,4 @@ Link for whiteboard:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/Assets/Stack-and-Queue-Implementation.jpg)
 
 Link for console output:
-[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/Assets/consolestack&queue.PNG)
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/Assets/console-stack-&-queue.PNG)
