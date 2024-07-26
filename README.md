@@ -36,3 +36,10 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Data-Structures/MergeSorted/Assets/console08.PNG)
+
+## Stack & Queue
+Link for whiteboard:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/Assets/Stack-and-Queue-Implementation.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/Assets/console-stack-&-queue.PNG)
