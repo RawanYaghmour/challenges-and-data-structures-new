@@ -1,4 +1,5 @@
 ﻿using Stack___Queue.Queue;
+using Stack___Queue.ReverseStackUsingQueue;
 using Stack___Queue.Stack;
 
 namespace Stack___Queue
@@ -64,8 +65,39 @@ namespace Stack___Queue
             Console.WriteLine($"Is queue empty: {queue.IsEmpty()}");
 
 
+            Console.WriteLine("\n************** Reverse Stack Test **************\n");
 
-            
+            StackWithReverse reverseStack = new StackWithReverse();
+
+            // Push nodes onto the stack
+            reverseStack.Push(1); // Stack: Top -> 1
+            reverseStack.Push(2); // Stack: Top -> 2 -> 1
+            reverseStack.Push(3); // Stack: Top -> 3 -> 2 -> 1
+            reverseStack.Push(4); // Stack: Top -> 4 -> 3 -> 2 -> 1
+            reverseStack.Push(5); // Stack: Top -> 5 -> 4 -> 3 -> 2 -> 1
+
+            Console.WriteLine("Stack before reversing:");
+            Console.WriteLine(reverseStack);
+
+            // Reverse the stack
+            reverseStack.ReverseStack();
+
+            Console.WriteLine("Stack after reversing:");
+            Console.WriteLine(reverseStack);
+
+            // Add more elements
+            reverseStack.Push(6); // Stack: Top -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+            reverseStack.Push(7); // Stack: Top -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+
+            Console.WriteLine("Stack after pushing 6 and 7:");
+            Console.WriteLine(reverseStack);
+
+            // Reverse the stack again
+            reverseStack.ReverseStack();
+
+            Console.WriteLine("Stack after reversing again:");
+            Console.WriteLine(reverseStack);
+
         }
     }
 }
