@@ -56,4 +56,4 @@ Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
 
 Link for whiteboard:
-[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/codeDelete.PNG)
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/whiteboard.jpg)
