@@ -48,3 +48,10 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
+
+## Delete-Middle-Element-Stack
+Link for console output:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
+
+Link for whiteboard:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/whiteboard.jpg)

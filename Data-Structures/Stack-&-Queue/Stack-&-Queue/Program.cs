@@ -1,4 +1,5 @@
-﻿using Stack___Queue.Queue;
+﻿using Stack___Queue.DeleteMiddleElement;
+using Stack___Queue.Queue;
 using Stack___Queue.ReverseStackUsingQueue;
 using Stack___Queue.Stack;
 
@@ -98,6 +99,38 @@ namespace Stack___Queue
             Console.WriteLine("Stack after reversing again:");
             Console.WriteLine(reverseStack);
 
+
+
+
+            Console.WriteLine("\n************** Delete Middle Element of Stack Test **************\n");
+
+            StackWithDeleteMiddle stackWithDeleteMiddle = new StackWithDeleteMiddle();
+
+            stackWithDeleteMiddle.Push(7);
+            stackWithDeleteMiddle.Push(14);
+            stackWithDeleteMiddle.Push(3);
+            stackWithDeleteMiddle.Push(8);
+            stackWithDeleteMiddle.Push(5);
+
+            Console.WriteLine("Stack before deleting middle:");
+            Console.WriteLine(stackWithDeleteMiddle);
+
+            stackWithDeleteMiddle.DeleteMiddle();
+
+            Console.WriteLine("Stack after deleting middle:");
+            Console.WriteLine(stackWithDeleteMiddle);
+
+            stackWithDeleteMiddle.Push(2);
+            stackWithDeleteMiddle.Push(9);
+            stackWithDeleteMiddle.Push(11);
+
+            Console.WriteLine("Stack after pushing 2, 9, and 11:");
+            Console.WriteLine(stackWithDeleteMiddle);
+
+            stackWithDeleteMiddle.DeleteMiddle();
+
+            Console.WriteLine("Stack after deleting middle again:");
+            Console.WriteLine(stackWithDeleteMiddle);
         }
     }
 }
