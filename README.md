@@ -6,9 +6,7 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Challenges/Reverse-Words/Reverse-Words/assets/consol-cc6B.PNG)
- Linked-List-Implementation
  
-Linked-List-Remove-Duplicates
 ## Linked-List-Implementation 
 Link for whiteboard:
 [Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/linked-list.jpg)
@@ -50,6 +48,13 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
+
+## Delete-Middle-Element-Stack
+Link for console output:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
+
+Link for whiteboard:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/whiteboard.jpg)
 
 ## MinStack 
 Link for whiteboard:
