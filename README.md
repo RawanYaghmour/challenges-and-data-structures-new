@@ -50,3 +50,13 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
+
+
+## Tree-Implementation
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/Assets/TreeImplementation.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/Assets/console13.PNG)
+
+
