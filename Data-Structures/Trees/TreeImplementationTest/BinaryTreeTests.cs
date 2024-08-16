@@ -5,6 +5,64 @@ namespace TreeImplementationTest
     public class BinaryTreeTests
     {
         [Fact]
+        public void TestMirrorTree()
+        {
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(4);
+            Btree.Root.Left = new Node(8);
+            Btree.Root.Right = new Node(7);
+            Btree.Root.Left.Left = new Node(12);
+            Btree.Root.Left.Right = new Node(9);
+
+            // Original inorder
+            List<int> originalInorder = Btree.InorderTraversal();
+            Assert.Equal(new List<int> { 12, 8, 9, 4, 7 }, originalInorder);
+
+            // Convert to mirror
+            Btree.MirrorTree();
+
+            // Mirrored inorder
+            List<int> mirroredInorder = Btree.InorderTraversal();
+            Assert.Equal(new List<int> { 7, 4, 9, 8, 12 }, mirroredInorder);
+        }
+
+        [Fact]
+        public void TestMirrorSingleTree()
+        {
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(1);
+
+            // Original inorder
+            List<int> originalInorder = Btree.InorderTraversal();
+            Assert.Equal(new List<int> { 1 }, originalInorder);
+
+            // Convert to mirror
+            Btree.MirrorTree();
+
+            // Mirrored inorder
+            List<int> mirroredInorder = Btree.InorderTraversal();
+            Assert.Equal(new List<int> { 1 }, mirroredInorder);
+        }
+
+        [Fact]
+        public void TestMirrorEmptyTree()
+        {
+            BinaryTree Btree = new BinaryTree();
+
+            // Original inorder
+            List<int> originalInorder = Btree.InorderTraversal();
+            Assert.Empty(originalInorder);
+
+            // Convert to mirror
+            Btree.MirrorTree();
+
+            // Mirrored inorder
+            List<int> mirroredInorder = Btree.InorderTraversal();
+            Assert.Empty(mirroredInorder);
+        }
+
+
+        [Fact]
         public void TestPreOrderTraversal()
         {
             var root = new Node(1);

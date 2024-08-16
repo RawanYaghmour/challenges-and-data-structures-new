@@ -10,7 +10,7 @@ namespace TreeImplementation
     {
         public Node Root { get;  set; }
 
-        public BinaryTree(Node root)
+        public BinaryTree(Node root = null)
         {
             Root = root;
         }
@@ -65,5 +65,49 @@ namespace TreeImplementation
                 PrintTree(node.Right, indent, true);
             }
         }
+
+
+
+        // Method to convert the tree into its mirror
+        public void MirrorTree()
+        {
+            MirrorTree(Root);
+        }
+
+        private void MirrorTree(Node node)
+        {
+            if (node == null) return;
+
+            // Swap the left and right children
+            Node temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+
+            // Recursively mirror the left and right subtrees
+            MirrorTree(node.Left);
+            MirrorTree(node.Right);
+        }
+
+        // Method to return inorder traversal as a list of integers
+        public List<int> InorderTraversal()
+        {
+            return InorderTraversal(Root);
+        }
+
+        private List<int> InorderTraversal(Node node)
+        {
+            List<int> result = new List<int>();
+            InorderTraversalHelper(node, result);
+            return result;
+        }
+
+        private void InorderTraversalHelper(Node node, List<int> result)
+        {
+            if (node == null) return;
+            InorderTraversalHelper(node.Left, result);
+            result.Add(node.Value);
+            InorderTraversalHelper(node.Right, result);
+        }
+
     }
 }
