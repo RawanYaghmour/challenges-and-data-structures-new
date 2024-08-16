@@ -6,9 +6,7 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Challenges/Reverse-Words/Reverse-Words/assets/consol-cc6B.PNG)
- Linked-List-Implementation
  
-Linked-List-Remove-Duplicates
 ## Linked-List-Implementation 
 Link for whiteboard:
 [Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/linked-list.jpg)
@@ -51,6 +49,20 @@ Link for whiteboard:
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
 
+## Delete-Middle-Element-Stack
+Link for console output:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
+
+Link for whiteboard:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/whiteboard.jpg)
+
+## MinStack 
+Link for whiteboard:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/MinStack/Assets/MinStackWhitebord.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/MinStack/Assets/console12.PNG)
+
 ## Tree-Implementation
 Link for whiteboard:
 [Link](./Data-Structures/Trees/TreeImplementation/Assets/TreeImplementation.jpg)
@@ -64,6 +76,5 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/MirrorTree/Assets/consoleMirrorTree.PNG)
-
 
 
