@@ -60,7 +60,7 @@ Link for console output:
 
 ## Mirror-Tree
 Link for whiteboard:
-[Link](./Data-Structures/Trees/TreeImplementation/MirrorTree/Assets/consoleMirrorTree.PNG)
+[Link](./Data-Structures/Trees/TreeImplementation/MirrorTree/Assets/MirrorTree.jpg)
 
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/MirrorTree/Assets/consoleMirrorTree.PNG)
