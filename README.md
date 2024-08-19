@@ -78,3 +78,9 @@ Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/MirrorTree/Assets/consoleMirrorTree.PNG)
 
 
+## Second Maximum Value
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/SecondMaxValue/Assets/SecondMaxValue.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/SecondMaxValue/Assets/consoleSecondMaxValue.PNG)
