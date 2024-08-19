@@ -109,5 +109,48 @@ namespace TreeImplementation
             InorderTraversalHelper(node.Right, result);
         }
 
+
+
+        // Method to find the second maximum value in the tree
+        public int? FindSecondMax()
+        {
+            if (Root == null)
+                throw new InvalidOperationException("The tree is empty.");
+
+            int max = FindMax(Root);
+            return FindSecondMax(Root, max, int.MinValue);
+        }
+
+        private int FindMax(Node node)
+        {
+            if (node == null)
+                return int.MinValue;
+
+            int max = node.Value;
+            int leftMax = FindMax(node.Left);
+            int rightMax = FindMax(node.Right);
+
+            if (leftMax > max)
+                max = leftMax;
+            if (rightMax > max)
+                max = rightMax;
+
+            return max;
+        }
+
+        private int? FindSecondMax(Node node, int max, int secondMax)
+        {
+            if (node == null)
+                return secondMax == int.MinValue ? null : (int?)secondMax;
+
+            if (node.Value < max && node.Value > secondMax)
+                secondMax = node.Value;
+
+            secondMax = FindSecondMax(node.Left, max, secondMax) ?? secondMax;
+            secondMax = FindSecondMax(node.Right, max, secondMax) ?? secondMax;
+
+            return secondMax == int.MinValue ? null : (int?)secondMax;
+        }
+
     }
 }
