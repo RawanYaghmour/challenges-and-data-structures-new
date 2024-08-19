@@ -64,6 +64,29 @@
             // Output: [7, 4, 9, 8, 12]
 
 
+            Console.WriteLine("\n******************** Second Maximum Value ********************");
+
+            BinaryTree SecondMaxValue = new BinaryTree(new Node(10));
+            SecondMaxValue.Root.Left = new Node(5);
+            SecondMaxValue.Root.Right = new Node(20);
+            SecondMaxValue.Root.Left.Left = new Node(3);
+            SecondMaxValue.Root.Left.Right = new Node(7);
+            SecondMaxValue.Root.Right.Left = new Node(15);
+            SecondMaxValue.Root.Right.Right = new Node(25);
+
+            int? secondMax = SecondMaxValue.FindSecondMax();
+
+            if (secondMax.HasValue)
+            {
+                Console.WriteLine("The second maximum value is: " + secondMax.Value);
+            }
+            else
+            {
+                Console.WriteLine("There is no second maximum value.");
+            }
+
+            // Expected Output: The second maximum value is: 20
+
 
 
         }
