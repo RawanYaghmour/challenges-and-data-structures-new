@@ -89,6 +89,24 @@
 
 
 
+
+            Console.WriteLine("\n******************** Leaf Sum ********************");
+
+            BinaryTree LeafSum = new BinaryTree();
+            LeafSum.Root = new Node(9);
+            LeafSum.Root.Left = new Node(8);
+            LeafSum.Root.Right = new Node(12);
+            LeafSum.Root.Left.Left = new Node(3);
+            LeafSum.Root.Left.Right = new Node(7);
+            LeafSum.Root.Right.Left = new Node(17);
+            LeafSum.Root.Right.Right = new Node(23);
+            LeafSum.Root.Left.Left.Right = new Node(4);
+
+            int leafSum2 = LeafSum.SumOfLeafNodes();
+
+            Console.WriteLine("Sum of all leaf nodes: " + leafSum2);
+
+
         }
 
     }

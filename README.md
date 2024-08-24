@@ -49,6 +49,7 @@ Link for whiteboard:
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
 
+
 ## Delete-Middle-Element-Stack
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
@@ -84,3 +85,11 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/SecondMaxValue/Assets/consoleSecondMaxValue.PNG)
+
+
+## Binary Tree - Sum of leaf nodes
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/LeafSum/Assets/LeafSum.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/LeafSum/Assets/consoleLeafSum.PNG)
