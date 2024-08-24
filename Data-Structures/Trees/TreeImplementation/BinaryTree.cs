@@ -152,5 +152,30 @@ namespace TreeImplementation
             return secondMax == int.MinValue ? null : (int?)secondMax;
         }
 
-    }
+
+
+        // Method to calculate the sum of all leaf nodes
+        public int SumOfLeafNodes()
+        {
+            return SumOfLeafNodes(Root);
+        }
+
+        private int SumOfLeafNodes(Node node)
+        {
+            if (node == null)
+                return 0;
+
+            // Check if the node is a leaf node
+            if (node.Left == null && node.Right == null)
+                return node.Value;
+
+            // Recursively calculate the sum of leaf nodes in both subtrees
+            int leftSum = SumOfLeafNodes(node.Left);
+            int rightSum = SumOfLeafNodes(node.Right);
+
+            return leftSum + rightSum;
+        }
+    
+
+}
 }
