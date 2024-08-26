@@ -175,7 +175,50 @@ namespace TreeImplementation
 
             return leftSum + rightSum;
         }
-    
 
-}
+
+
+
+        // Method to calculate Largest Level Value
+        public List<int> LargestLevelValue()
+        {
+            List<int> result = new List<int>();
+            if (Root == null) return result;
+
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxLevelValue = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node currentNode = queue.Dequeue();
+                    if (currentNode.Value > maxLevelValue)
+                    {
+                        maxLevelValue = currentNode.Value;
+                    }
+
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+
+                result.Add(maxLevelValue);
+            }
+
+            return result;
+        }
+
+
+
+    }
 }

@@ -107,6 +107,27 @@
             Console.WriteLine("Sum of all leaf nodes: " + leafSum2);
 
 
+
+
+            Console.WriteLine("\n******************** Largest-Level-Value ********************");
+
+            BinaryTree Largest = new BinaryTree();
+            Largest.Root = new Node(5);
+            Largest.Root.Left = new Node(13);
+            Largest .Root.Right = new Node(7);
+            Largest.Root.Left.Left = new Node(3);
+            Largest.Root.Left.Right = new Node(7);
+            Largest.Root.Right.Left = new Node(12);
+            Largest.Root.Right.Right = new Node(20);
+            Largest.Root.Left.Left.Left = new Node(1);
+            Largest.Root.Left.Left.Right = new Node(4);
+            Largest.Root.Right.Left.Right = new Node(11);
+
+            List<int> largestValues = Largest.LargestLevelValue(); // Output: [5, 13, 20, 11]
+            foreach (var value in largestValues)
+            {
+                Console.WriteLine(value);
+            }
         }
 
     }
