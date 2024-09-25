@@ -1,12 +1,6 @@
 # challenges-and-data-structures-new
 
-## Revarse-words
-Link for whiteboard:
-[Link](./Challenges/Reverse-Words/Reverse-Words/assets/Reverse-Words.jpg)
 
-Link for console output:
-[Link](./Challenges/Reverse-Words/Reverse-Words/assets/consol-cc6B.PNG)
- 
 ## Linked-List-Implementation 
 Link for whiteboard:
 [Link](./Data-Structures/Data-Structures/LinkedListImplementation/Assets/linked-list.jpg)
@@ -101,3 +95,11 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/LargestLevelValue/Assets/consoleLargestLevelValue.PNG)
+
+
+## Linked-List-Rotate-K
+Link for whiteboard:
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/RotateLinkedList/RotateLinkedList/Assets/RotateLinkedList.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Data-Structures/LinkedListImplementation/RotateLinkedList/RotateLinkedList/Assets/RotateLinkedListConsole.PNG)
