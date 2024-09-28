@@ -220,5 +220,45 @@ namespace TreeImplementation
 
 
 
+
+        // Method to print the right view of the binary tree
+        public void PrintRightView()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return;
+            }
+
+            // Use a queue for level order traversal
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                Node rightMostNode = null;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node currentNode = queue.Dequeue();
+
+                    // The rightmost node will be the last node we encounter at each level
+                    rightMostNode = currentNode;
+
+                    if (currentNode.Left != null)
+                        queue.Enqueue(currentNode.Left);
+                    if (currentNode.Right != null)
+                        queue.Enqueue(currentNode.Right);
+                }
+
+                // Print the rightmost node of the current level
+                Console.Write(rightMostNode.Value + " ");
+            }
+            Console.WriteLine();
+        }
+
+
+
     }
 }
