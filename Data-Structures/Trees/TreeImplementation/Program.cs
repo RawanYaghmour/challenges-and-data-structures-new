@@ -128,6 +128,23 @@
             {
                 Console.WriteLine(value);
             }
+
+
+            Console.WriteLine("\n******************** Print-Right-View ********************");
+
+            BinaryTree RightViewPrint = new BinaryTree();
+            RightViewPrint.Root = new Node(2);
+            RightViewPrint.Root.Left = new Node(3);
+            RightViewPrint.Root.Right = new Node(5);
+            RightViewPrint.Root.Left.Left = new Node(4);
+            RightViewPrint.Root.Right.Right = new Node(6);
+            RightViewPrint.Root.Left.Left.Right = new Node(7);
+
+            RightViewPrint.PrintRightView();  // Output: 2 5 6 7
+
+
+
+
         }
 
     }
