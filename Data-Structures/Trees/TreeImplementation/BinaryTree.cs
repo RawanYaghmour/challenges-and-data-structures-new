@@ -260,5 +260,49 @@ namespace TreeImplementation
 
 
 
+
+        //Find-Max-Level-Nodes
+        public int FindMaxLevelNodes()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return -1; // Indicate empty tree
+            }
+
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(Root);
+            int level = 0;
+            int maxNodes = 0;
+            int maxLevel = 0;
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;  // Number of nodes at the current level
+
+                if (levelSize > maxNodes)
+                {
+                    maxNodes = levelSize;
+                    maxLevel = level;
+                }
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node current = queue.Dequeue();
+
+                    if (current.Left != null)
+                        queue.Enqueue(current.Left);
+                    if (current.Right != null)
+                        queue.Enqueue(current.Right);
+                }
+
+                level++;
+            }
+
+            return maxLevel;
+        }
+
+
+
     }
 }

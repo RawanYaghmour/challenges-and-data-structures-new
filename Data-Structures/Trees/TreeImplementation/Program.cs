@@ -145,6 +145,52 @@
 
 
 
+
+            Console.WriteLine("\n******************** Max-Level-Nodes ********************");
+
+            // Example 1
+            BinaryTree MaxLevelNodes = new BinaryTree();
+            MaxLevelNodes.Root = new Node(1);
+            MaxLevelNodes.Root.Left = new Node(2);
+            MaxLevelNodes.Root.Right = new Node(3);
+            MaxLevelNodes.Root.Left.Left = new Node(4);
+            MaxLevelNodes.Root.Left.Right = new Node(5);
+            MaxLevelNodes.Root.Right.Right = new Node(6);
+            MaxLevelNodes.Root.Left.Left.Left = new Node(7);
+
+            Console.WriteLine("Example 1:");
+            int maxLevel = MaxLevelNodes.FindMaxLevelNodes();
+            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel); // Expected output: 2
+
+            // Example 2
+            BinaryTree MaxLevelNodes2 = new BinaryTree();
+            MaxLevelNodes2.Root = new Node(1);
+            MaxLevelNodes2.Root.Left = new Node(2);
+            MaxLevelNodes2.Root.Right = new Node(3);
+            MaxLevelNodes2.Root.Left.Left = new Node(4);
+            MaxLevelNodes2.Root.Left.Right = new Node(5);
+            MaxLevelNodes2.Root.Right.Right = new Node(7);
+            MaxLevelNodes2.Root.Left.Left.Left = new Node(8);
+            MaxLevelNodes2.Root.Left.Right.Left = new Node(9);
+            MaxLevelNodes2.Root.Right.Right.Left = new Node(10);
+
+            Console.WriteLine("Example 2:");
+            maxLevel = MaxLevelNodes2.FindMaxLevelNodes();
+            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel); // Expected output: 2
+
+            // Test with empty tree
+            BinaryTree emptyTree = new BinaryTree();
+            Console.WriteLine("Test with Empty Tree:");
+            maxLevel = emptyTree.FindMaxLevelNodes();
+            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel); // Expected output: -1
+
+            // Test with a single node
+            BinaryTree singleNodeTree = new BinaryTree();
+            singleNodeTree.Root = new Node(1);
+            Console.WriteLine("Test with Single Node Tree:");
+            maxLevel = singleNodeTree.FindMaxLevelNodes();
+            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel); // Expected output: 0
+
         }
 
     }
