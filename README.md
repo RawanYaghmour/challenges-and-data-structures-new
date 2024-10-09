@@ -44,6 +44,7 @@ Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
 
 
+
 ## Delete-Middle-Element-Stack
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
@@ -122,3 +123,10 @@ Link for whiteboard:
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/MaxLevelNodes/Assets/MaxLevelNodesConsole.PNG)
 
+
+## Minimum-Depth
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/MinimumDepth/Assets/MinimumDepth.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/MinimumDepth/Assets/MinimumDepthConsole.PNG)

@@ -304,5 +304,50 @@ namespace TreeImplementation
 
 
 
+
+
+
+        // Method to find the minimum depth of the binary tree
+        public int FindMinimumDepth()
+        {
+            if (Root == null)
+            {
+                return 0; // The minimum depth of an empty tree is 0
+            }
+
+            return FindMinDepth(Root);
+        }
+
+        private int FindMinDepth(Node node)
+        {
+            // If the node is null, return 0
+            if (node == null)
+            {
+                return 0;
+            }
+
+            // If the node is a leaf, return 1
+            if (node.Left == null && node.Right == null)
+            {
+                return 1;
+            }
+
+            // If the left subtree is null, recursively find the min depth of the right subtree
+            if (node.Left == null)
+            {
+                return FindMinDepth(node.Right) + 1;
+            }
+
+            // If the right subtree is null, recursively find the min depth of the left subtree
+            if (node.Right == null)
+            {
+                return FindMinDepth(node.Left) + 1;
+            }
+
+            // If both subtrees are non-null, find the minimum depth of both subtrees
+            return Math.Min(FindMinDepth(node.Left), FindMinDepth(node.Right)) + 1;
+        }
+
+
     }
 }
