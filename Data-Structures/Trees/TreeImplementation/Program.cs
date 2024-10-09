@@ -191,6 +191,40 @@
             maxLevel = singleNodeTree.FindMaxLevelNodes();
             Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel); // Expected output: 0
 
+
+
+
+
+            Console.WriteLine("\n******************** Minimum-Depth ********************");
+
+
+            BinaryTree MinimumDepth = new BinaryTree();
+            MinimumDepth.Root = new Node(1);
+            MinimumDepth.Root.Left = new Node(2);
+            MinimumDepth.Root.Right = new Node(3);
+            MinimumDepth.Root.Left.Left = new Node(4);
+            MinimumDepth.Root.Left.Right = new Node(5);
+
+            int minDepth = MinimumDepth.FindMinimumDepth();
+            Console.WriteLine("Example 1: Minimum Depth = " + minDepth); // Expected output: 2
+
+            // Example 2
+            BinaryTree Btree2 = new BinaryTree();
+            Btree2.Root = new Node(1);
+            Btree2.Root.Left = new Node(2);
+            Btree2.Root.Right = new Node(3);
+            Btree2.Root.Left.Right = new Node(5);
+            Btree2.Root.Right.Right = new Node(6);
+
+            minDepth = Btree2.FindMinimumDepth();
+            Console.WriteLine("Example 2: Minimum Depth = " + minDepth); // Expected output: 3
+
+            // Test with empty tree
+            BinaryTree MinimumDepth2 = new BinaryTree();
+            minDepth = MinimumDepth2.FindMinimumDepth();
+            Console.WriteLine("Test with Empty Tree: Minimum Depth = " + minDepth); // Expected output: 0
+
+
         }
 
     }
