@@ -50,3 +50,10 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
+
+## Minimum-Depth
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/MinimumDepth/Assets/MinimumDepth.jpg)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/MinimumDepth/Assets/MinimumDepthConsole.PNG)
