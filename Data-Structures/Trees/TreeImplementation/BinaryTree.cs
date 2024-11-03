@@ -349,5 +349,61 @@ namespace TreeImplementation
         }
 
 
+
+
+        // Method to convert the BTree-to-BST
+        public void ConvertToBST()
+        {
+            // Step 1: Collect values using inorder traversal
+            List<int> values = new List<int>();
+            InOrderCollectValues(Root, values);
+
+            // Step 2: Sort the collected values
+            values.Sort();
+
+            // Step 3: Replace values in the tree with sorted values
+            int[] index = { 0 }; // Array to track index by reference
+            InOrderAssignValues(Root, values, index);
+        }
+
+        // Helper method to perform inorder traversal and collect node values
+        private void InOrderCollectValues(Node node, List<int> values)
+        {
+            if (node == null)
+                return;
+
+            InOrderCollectValues(node.Left, values);
+            values.Add(node.Value);
+            InOrderCollectValues(node.Right, values);
+        }
+
+        // Helper method to perform inorder traversal and assign sorted values to nodes
+        private void InOrderAssignValues(Node node, List<int> values, int[] index)
+        {
+            if (node == null)
+                return;
+
+            InOrderAssignValues(node.Left, values, index);
+            node.Value = values[index[0]++];
+            InOrderAssignValues(node.Right, values, index);
+        }
+
+        // Print the tree in inorder to display it
+        public void PrintInOrder()
+        {
+            InOrderPrint(Root);
+            Console.WriteLine();
+        }
+
+        private void InOrderPrint(Node node)
+        {
+            if (node == null)
+                return;
+
+            InOrderPrint(node.Left);
+            Console.Write(node.Value + " ");
+            InOrderPrint(node.Right);
+        }
+
     }
 }
