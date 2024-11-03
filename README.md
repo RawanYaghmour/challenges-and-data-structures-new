@@ -50,3 +50,10 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/ReverseStackUsingQueue/Assets/ConsoleReverseStackUsingQueue.PNG)
+
+## BTree-to-BST
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/BTreeToBST/Assets/BinaryTreeToBSTWhiteBord.PNG)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/BTreeToBST/Assets/BinaryTreeToBSTCode.PNG)
