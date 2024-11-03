@@ -45,6 +45,7 @@ Link for console output:
 
 
 
+
 ## Delete-Middle-Element-Stack
 Link for console output:
 [Link](./Data-Structures/Stack-&-Queue/Stack-&-Queue/DeleteMiddleElement/Assets/ConsoleDelete.PNG)
@@ -130,3 +131,12 @@ Link for whiteboard:
 
 Link for console output:
 [Link](./Data-Structures/Trees/TreeImplementation/MinimumDepth/Assets/MinimumDepthConsole.PNG)
+
+
+## BTree-to-BST
+Link for whiteboard:
+[Link](./Data-Structures/Trees/TreeImplementation/BTreeToBST/Assets/BinaryTreeToBSTWhiteBord.PNG)
+
+Link for console output:
+[Link](./Data-Structures/Trees/TreeImplementation/BTreeToBST/Assets/BinaryTreeToBSTCode.PNG)
+=======

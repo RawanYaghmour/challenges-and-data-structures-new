@@ -195,7 +195,7 @@
 
 
 
-            Console.WriteLine("\n******************** Minimum-Depth ********************");
+            Console.WriteLine("\n******************** Minimum-DepthBTree-to-BST ********************");
 
 
             BinaryTree MinimumDepth = new BinaryTree();
@@ -224,6 +224,27 @@
             minDepth = MinimumDepth2.FindMinimumDepth();
             Console.WriteLine("Test with Empty Tree: Minimum Depth = " + minDepth); // Expected output: 0
 
+
+
+
+            Console.WriteLine("\n******************** Convert BTree-to-BST ********************");
+            BinaryTree BTreeToBST = new BinaryTree();
+            BTreeToBST.Root = new Node(40);
+            BTreeToBST.Root.Left = new Node(10);
+            BTreeToBST.Root.Right = new Node(50);
+            BTreeToBST.Root.Left.Left = new Node(5);
+            BTreeToBST.Root.Left.Right = new Node(30);
+            BTreeToBST.Root.Right.Right = new Node(60);
+            BTreeToBST.Root.Left.Right.Left = new Node(20);
+            BTreeToBST.Root.Left.Right.Right = new Node(35);
+
+            Console.WriteLine("Original Binary Tree:");
+            BTreeToBST.PrintInOrder(); // Print original tree in inorder
+
+            BTreeToBST.ConvertToBST();
+
+            Console.WriteLine("\nConverted Binary Search Tree:");
+            BTreeToBST.PrintInOrder(); // Print the converted tree in inorder
 
         }
 
